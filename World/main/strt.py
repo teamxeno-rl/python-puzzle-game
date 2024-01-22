@@ -1,7 +1,7 @@
 
 from .test import test
 from .b1 import main as b1
-from .b1 import paths 
+from .b1 import path1
 
 def start():
     starter = input("You got it! First, what is your name? ")
@@ -16,7 +16,6 @@ def start():
         msg1 = b1.entrance(name)
         print(msg1)
         face = "North"
-        msg2 = paths(face.lower())
-        return(msg2)
+        path1(face.lower())
 
     
