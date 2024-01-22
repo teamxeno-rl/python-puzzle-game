@@ -8,6 +8,7 @@ def path2(facing):
     if (face == "north"):
         f1()
         from .p1 import path1
+        from .p3 import path3
         if (cont == "back"):
             print("\n Okay! You turn back and head down the path.")
             face = "south"
@@ -16,8 +17,9 @@ def path2(facing):
              print("\n p4")
              loop1()
         elif (cont == "right"):
-             print("\n p3")
-             loop1()
+             print("\n Okay! You turn down the right path.")
+             face = "east"
+             path3(face)
         elif (cont == "quit"):
              exit()
         else :
@@ -25,10 +27,19 @@ def path2(facing):
             loop1()
     elif (face == "west"):
         f2()
+        from .p1 import path1
+        from .p3 import path3
         if (cont == "left"):
             print("\n Okay! You continue on the path.")
             face = "south"
             path1(face)
+        elif (cont == "back"):
+             print("\n Okay! You turn back down the path.")
+             face = "east"
+             path3(face)
+        elif (cont == "forward"):
+             print("\n p4")
+             loop1()
         elif (cont == "quit"):
              exit()
         else :
@@ -37,10 +48,19 @@ def path2(facing):
     
     elif (face == "east"):
         f3()
+        from .p1 import path1
+        from .p3 import path3
         if (cont == "right"):
             print("\n Okay! You continue on the path.")
             face = "south"
             path1(face)
+        elif (cont == "forward"):
+            print("\n Okay! You continue up the path.")
+            face = "east"
+            path3(face)
+        elif (cont == "back"):
+             print("\n p4")
+             loop1()
         elif (cont == "quit"):
              exit()
         else :
