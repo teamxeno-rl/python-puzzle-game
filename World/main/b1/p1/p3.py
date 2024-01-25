@@ -12,7 +12,7 @@ def path3(facing):
             print("\n Okay! You turn back and head down the path.")
             face = "west"
             path2(face)
-        elif (cont == "forward"):
+        elif (cont == "forward"): #todo
              print("\n Okay! You continue up the path.")
              print("\n p5")
              loop1()
@@ -24,7 +24,7 @@ def path3(facing):
     elif (face == "west"):
         f1()
         from .p2 import path2
-        if (cont == "back"):
+        if (cont == "back"):#todo
             print("\n Okay! You turn back down the path.")
             print("\n p5")
         elif (cont == "forward"):

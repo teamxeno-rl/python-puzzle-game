@@ -13,8 +13,8 @@ def path2(facing):
             print("\n Okay! You turn back and head down the path.")
             face = "south"
             path1(face)
-        elif (cont == "left"):
-             print("\n p4")
+        elif (cont == "left"): #todo
+             print("\n p4") 
              loop1()
         elif (cont == "right"):
              print("\n Okay! You turn down the right path.")
@@ -37,7 +37,7 @@ def path2(facing):
              print("\n Okay! You turn back down the path.")
              face = "east"
              path3(face)
-        elif (cont == "forward"):
+        elif (cont == "forward"): #todo
              print("\n p4")
              loop1()
         elif (cont == "quit"):
@@ -58,7 +58,7 @@ def path2(facing):
             print("\n Okay! You continue up the path.")
             face = "east"
             path3(face)
-        elif (cont == "back"):
+        elif (cont == "back"):#todo
              print("\n p4")
              loop1()
         elif (cont == "quit"):
